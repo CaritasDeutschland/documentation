@@ -324,6 +324,12 @@ Folgende Werte müssen in der UserService.env zwingend gesetzt werden:
 | SERVICE_ENCRYPTION_APPKEY | Key for message encryption (must match the one defined in the UserService!) |
 | CSRF_HEADER_PROPERTY | CSRF header property name (must match the frontend header name!) |
 | CSRF_COOKIE_PROPERTY | CSRF cookie property name (must match the frontend cookie name!) |
+| TWOFACTORAUTH_USER_ENABLED | Determines whether the two-factor authentication can be activated for the users (true or false) |
+| TWOFACTORAUTH_CONSULTANT_ENABLED | Determines whether the two-factor authentication can be activated for the consultants (true or false) |
+| KEYCLOAKAPI_URL_OTP | Path to the two factor authentication keycloak extension
+| KEYCLOAKAPI_OTP_SETUP_INFO | Endpoint to get the setup data for the two factor authentication |
+| KEYCLOAKAPI_OTP_SETUP | Endpoint to activate the two factor authentication |
+| KEYCLOAKAPI_OTP_DELETE | Endpoint to deactivate two factor authentication |
 
 ⚠️ Before the first start of the UserService it is mandatory to set `SPRING_ACTIVE_PROFILE` to `dev`. This guarants that the database structure is created correctly. After the first start the value can be changed back to `prod`. ⚠️
 
