@@ -9,7 +9,11 @@ We use the JavaScript Testing Framework [Cypress](https://www.cypress.io/) for E
 
 ### Selecting Elements in Cypress tests
 
-To select DOM-elements for cypress tests we are using `data-cy` attributes to provide context to the selectors and isolate them from CSS or JS changes. More informations you can find on the [Best-Practices-Page](https://docs.cypress.io/guides/references/best-practices.html#Selecting-Elements) in the Cypress Documentation.
+To select DOM-elements for cypress tests we are using `data-cy` attributes to
+provide context to the selectors and isolate them from CSS or JS changes. You
+can find more information on the
+[Best-Practices-Page](https://docs.cypress.io/guides/references/best-practices.html#Selecting-Elements)
+in the Cypress Documentation.
 
 ### Run the Cypress tests
 
